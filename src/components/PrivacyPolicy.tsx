@@ -18,7 +18,6 @@ function PrivacyPolicy() {
             <ol className="terms-list">
               <li>사용자 식별을 위한 userId</li>
               <li>게임 내 플레이 기록(점수, 진행 단계, 승패, 랭킹 등)</li>
-              <li>기기 정보(운영체제 종류, IP 주소, 접속 시간 등)</li>
             </ol>
             <p>본 게임은 정확한 위치정보(GPS)를 수집하지 않습니다.</p>
           </article>

@@ -1,0 +1,296 @@
+/* 개인정보 처리방침 페이지 스타일 */
+.privacy-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.privacy-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.privacy-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.privacy-date {
+  font-size: 1rem;
+  color: #f0f0f0;
+  font-weight: 500;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.privacy-content {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.privacy-chapter {
+  margin-bottom: 3rem;
+}
+
+.privacy-chapter h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #34495e;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+  color: white;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.privacy-article {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border-left: 4px solid #e74c3c;
+}
+
+.privacy-article h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.privacy-article p {
+  margin-bottom: 1rem;
+  text-align: justify;
+  font-size: 0.95rem;
+}
+
+.privacy-list {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.privacy-list li {
+  margin-bottom: 0.8rem;
+  text-align: justify;
+  font-size: 0.95rem;
+  position: relative;
+}
+
+.privacy-list li::marker {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.privacy-table {
+  margin: 1.5rem 0;
+  overflow-x: auto;
+}
+
+.privacy-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.privacy-table th,
+.privacy-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 0.9rem;
+}
+
+.privacy-table th {
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+  color: white;
+  font-weight: 600;
+  text-align: center;
+}
+
+.privacy-table td {
+  background: #fff;
+  vertical-align: top;
+}
+
+.privacy-table tbody tr:hover {
+  background: #f8f9fa;
+}
+
+.privacy-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.privacy-contact {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 6px;
+  border: 2px solid #e74c3c;
+  margin: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.privacy-contact h4 {
+  color: #e74c3c;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.privacy-contact p {
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+}
+
+.privacy-contact strong {
+  color: #e74c3c;
+  font-weight: 600;
+}
+
+.privacy-footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+.privacy-reference {
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .privacy-container {
+    padding: 1rem;
+  }
+  
+  .privacy-header h1 {
+    font-size: 2rem;
+  }
+  
+  .privacy-content {
+    padding: 1rem;
+  }
+  
+  .privacy-chapter h2 {
+    font-size: 1.5rem;
+  }
+  
+  .privacy-article {
+    padding: 1rem;
+  }
+  
+  .privacy-article h3 {
+    font-size: 1.2rem;
+  }
+  
+  .privacy-table th,
+  .privacy-table td {
+    padding: 0.8rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .privacy-container {
+    padding: 0.5rem;
+  }
+  
+  .privacy-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .privacy-content {
+    padding: 0.8rem;
+  }
+  
+  .privacy-chapter h2 {
+    font-size: 1.3rem;
+    padding: 0.8rem;
+  }
+  
+  .privacy-article {
+    padding: 0.8rem;
+  }
+  
+  .privacy-article h3 {
+    font-size: 1.1rem;
+  }
+  
+  .privacy-article p,
+  .privacy-list li {
+    font-size: 0.9rem;
+  }
+  
+  .privacy-table th,
+  .privacy-table td {
+    padding: 0.6rem;
+    font-size: 0.8rem;
+  }
+  
+  .privacy-contact {
+    padding: 1rem;
+  }
+}
+
+/* 인쇄 스타일 */
+@media print {
+  .privacy-container {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+  
+  .privacy-content {
+    box-shadow: none;
+    padding: 0;
+  }
+  
+  .privacy-chapter h2 {
+    background: none;
+    color: #000;
+    border: 1px solid #000;
+  }
+  
+  .privacy-article {
+    background: none;
+    border-left: 2px solid #000;
+    break-inside: avoid;
+  }
+  
+  .privacy-table {
+    break-inside: avoid;
+  }
+  
+  .privacy-table th {
+    background: none;
+    color: #000;
+    border: 1px solid #000;
+  }
+  
+  .privacy-table td {
+    border: 1px solid #000;
+  }
+}

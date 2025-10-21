@@ -111,8 +111,40 @@
   font-style: italic;
 }
 
+.terms-links {
+  margin-top: 1rem;
+}
+
+.privacy-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.privacy-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+}
+
 /* 반응형 디자인 */
 @media (max-width: 768px) {
+  .nav-container {
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+  
+  .nav-link {
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+  }
+  
   .terms-container {
     padding: 1rem;
   }
@@ -139,6 +171,16 @@
 }
 
 @media (max-width: 480px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .nav-link {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+  }
+  
   .terms-container {
     padding: 0.5rem;
   }

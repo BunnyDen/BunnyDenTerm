@@ -1,6 +1,8 @@
+import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import './App.css';
+import PrivacyPolicy from './components/PrivacyPolicy';
 
-function App() {
+function TermsOfService() {
   return (
     <div className="terms-container">
       <header className="terms-header">
@@ -736,9 +738,27 @@ function App() {
 
         <footer className="terms-footer">
           <p className="terms-reference">2025. 10. 10. 개정</p>
+          <p className="terms-links">
+            <Link to="/privacy" className="privacy-link">
+              개인정보처리방침
+            </Link>
+          </p>
         </footer>
       </main>
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Router basename="/BunnyDenTerm">
+      <div className="app">
+        <Routes>
+          <Route path="/" element={<TermsOfService />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
